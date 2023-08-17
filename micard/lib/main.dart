@@ -43,62 +43,66 @@ class MyApp extends StatelessWidget{
                 letterSpacing: 1.5,                 
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 color: Colors.white,
                 margin: const EdgeInsets.symmetric(
                   vertical: 10.0, 
                   horizontal: 25.0
                   ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 20.0,                      
-                      color: Colors.teal.shade300,
-                  ),
-                  const SizedBox(
-                    width: 10.0,
-                  ),
-                  Text(
-                    '012-0020.0000',
-                    style: TextStyle(
-                      color: Colors.teal.shade300,
-                      fontFamily: 'SourceSans3',
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                margin: const EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 25.0,
-                ),
-                color: Colors.white,
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      size: 20.0,
-                      color: Colors.teal.shade300,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.phone,
+                        size: 20.0,                      
+                        color: Colors.teal.shade300,
                     ),
                     const SizedBox(
                       width: 10.0,
                     ),
                     Text(
-                      'email@email.com',
+                      '012-0020.0000',
                       style: TextStyle(
                         color: Colors.teal.shade300,
                         fontFamily: 'SourceSans3',
                         fontSize: 20.0,
-                        fontWeight: FontWeight.bold
+                        fontWeight: FontWeight.bold,
                       ),
-                    ),
-                  ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                margin: const EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    children: [
+                      Icon(
+                        Icons.mail,
+                        size: 20.0,
+                        color: Colors.teal.shade300,
+                      ),
+                      const SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        'email@email.com',
+                        style: TextStyle(
+                          color: Colors.teal.shade300,
+                          fontFamily: 'SourceSans3',
+                          fontSize: 20.0,
+                          fontWeight: FontWeight.bold
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
